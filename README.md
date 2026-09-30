@@ -1,2 +1,254 @@
-# campus-accommodation-landing
-A landing page template for on-campus accommodation
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusNest | On-Campus Living</title>
+    <meta
+      name="description"
+      content="Discover comfortable, secure, and vibrant on-campus accommodation designed for students and young professionals."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">C</span>
+          <span>CampusNest</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#about">About</a>
+          <a href="#amenities">Amenities</a>
+          <a href="#plans">Plans</a>
+          <a href="#process">How it works</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="button button-small" href="#contact">Apply now</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Live close to campus. Thrive in community.</p>
+            <h1>Comfortable campus living that feels like home.</h1>
+            <p class="lead">
+              Thoughtfully designed residences for students who want secure, inspiring,
+              and affordable living just steps away from classrooms, libraries, and campus life.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#plans">View rooms</a>
+              <a class="button button-secondary" href="#about">Learn more</a>
+            </div>
+            <ul class="stats" aria-label="Accommodation highlights">
+              <li><strong>1,200+</strong><span>Residents</span></li>
+              <li><strong>24/7</strong><span>Security</span></li>
+              <li><strong>4.9/5</strong><span>Student rating</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-card" aria-label="Residence showcase">
+            <div class="card-image"></div>
+            <div class="card-content">
+              <div class="card-tag">Featured residence</div>
+              <h2>North Hall</h2>
+              <div class="meta-row">
+                <span>Single / Double rooms</span>
+                <strong>$420/mo</strong>
+              </div>
+              <ul>
+                <li>Fully furnished</li>
+                <li>Free Wi‑Fi & laundry</li>
+                <li>Study lounge access</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip">
+        <div class="container trust-grid">
+          <span>Trusted by students across 15 departments</span>
+          <span>Safe, clean, and community-focused</span>
+          <span>Close to libraries, dining halls, and sports facilities</span>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container section-grid">
+          <div>
+            <p class="eyebrow alt">Why students choose us</p>
+            <h2>Designed for focus, comfort, and connection.</h2>
+          </div>
+          <div>
+            <p>
+              Our campus residences combine modern amenities with a welcoming student community.
+              Whether you need a quiet place to study or a lively environment to meet new people,
+              we provide living spaces that support every part of your academic journey.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="amenities" class="section muted">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Everything included</p>
+            <h2>Convenience built into every stay.</h2>
+          </div>
+
+          <div class="amenities-grid">
+            <article class="feature-card">
+              <div class="icon">📶</div>
+              <h3>High-speed Wi‑Fi</h3>
+              <p>Fast, reliable internet for lectures, streaming, and study sessions.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon">🛏️</div>
+              <h3>Fully furnished rooms</h3>
+              <p>Comfortable beds, storage, desks, and cozy living essentials included.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon">🧺</div>
+              <h3>Housekeeping & laundry</h3>
+              <p>Regular upkeep and shared laundry facilities for stress-free living.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon">🔒</div>
+              <h3>Secure access</h3>
+              <p>Controlled entry, CCTV monitoring, and 24/7 resident support.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon">🍽️</div>
+              <h3>Dining nearby</h3>
+              <p>Easy access to dining halls, cafés, and quick-grab food options.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon">📚</div>
+              <h3>Study spaces</h3>
+              <p>Dedicated reading lounges and quiet zones for focused academic work.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="plans" class="section">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow">Room options</p>
+            <h2>Choose a plan that fits your lifestyle.</h2>
+          </div>
+
+          <div class="plans-grid">
+            <article class="plan-card">
+              <span class="badge">Popular</span>
+              <h3>Standard Room</h3>
+              <div class="price">$420<span>/month</span></div>
+              <ul>
+                <li>Shared kitchen</li>
+                <li>Single bed & study desk</li>
+                <li>Wi‑Fi + laundry access</li>
+                <li>On-site support</li>
+              </ul>
+              <a class="button button-secondary full-width" href="#contact">Apply now</a>
+            </article>
+
+            <article class="plan-card featured-plan">
+              <span class="badge">Best value</span>
+              <h3>Premium Single</h3>
+              <div class="price">$560<span>/month</span></div>
+              <ul>
+                <li>Private room</li>
+                <li>Ensuite bathroom</li>
+                <li>Air conditioning</li>
+                <li>Priority room selection</li>
+              </ul>
+              <a class="button full-width" href="#contact">Reserve your room</a>
+            </article>
+
+            <article class="plan-card">
+              <span class="badge">For groups</span>
+              <h3>Shared Suite</h3>
+              <div class="price">$680<span>/month</span></div>
+              <ul>
+                <li>Two-bedroom suite</li>
+                <li>Shared common area</li>
+                <li>Flexible roommate matching</li>
+                <li>Community events access</li>
+              </ul>
+              <a class="button button-secondary full-width" href="#contact">Book a suite</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section muted">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow">How it works</p>
+            <h2>Simple steps to secure your place.</h2>
+          </div>
+
+          <div class="steps-grid">
+            <div class="step-item">
+              <span class="step-number">01</span>
+              <h3>Choose your room</h3>
+              <p>Select the room type that best matches your needs and budget.</p>
+            </div>
+            <div class="step-item">
+              <span class="step-number">02</span>
+              <h3>Submit your details</h3>
+              <p>Complete the quick application form with your academic information.</p>
+            </div>
+            <div class="step-item">
+              <span class="step-number">03</span>
+              <h3>Move in & thrive</h3>
+              <p>Confirm your room and settle into campus life with full support.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonial-section">
+        <div class="container testimonial-box">
+          <p class="eyebrow alt">Student experience</p>
+          <blockquote>
+            “Living on campus made my university experience so much richer. I could study easily,
+            meet new people, and feel safe every day.”
+          </blockquote>
+          <div class="author">
+            <strong>Aisha T.</strong>
+            <span>Computer Science Student</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="cta-section">
+        <div class="container cta-box">
+          <div>
+            <p class="eyebrow alt">Ready to move in?</p>
+            <h2>Find your ideal student home today.</h2>
+          </div>
+          <a class="button" href="mailto:hello@campusnest.edu">hello@campusnest.edu</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <div>© 2026 CampusNest</div>
+        <div>Accommodation Office • Building 12, Student Village</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
