@@ -18,6 +18,11 @@
 html { scroll-behavior: smooth; scroll-padding-top: 88px; }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
 img { display: block; max-width: 100%; }
+.logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
 a { color: inherit; text-decoration: none; }
 button, input, select, textarea { font: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; }
@@ -43,6 +48,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .menu-toggle { display: none; }
 
 .hero { padding: 68px 0 0; }
+ 
 .hero-layout { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: clamp(40px, 7vw, 100px); }
 .hero-copy { padding: 15px 0 27px; }
 .eyebrow { display: flex; align-items: center; gap: 9px; margin: 0 0 23px; color: var(--green); font-size: 10px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; }
