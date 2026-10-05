@@ -33,6 +33,16 @@ This is a static HTML, CSS, and JavaScript website with no build step or package
 
 The page uses local images from `image/`. Google Fonts are loaded from Google Fonts when an internet connection is available; system font fallbacks are defined.
 
+## Deploy to Netlify
+
+The site is static: Netlify publishes the repository root as configured in `netlify.toml`, with no build command or dependencies required.
+
+1. Sign in to Netlify with access to the GitHub account that owns this repository.
+2. Open [Netlify's GitHub import flow](https://app.netlify.com/start/deploy?repository=https://github.com/java2183/campus-accommodation-landing) and authorize the repository if prompted.
+3. Deploy the `main` branch. Netlify reads the publish directory and response headers from `netlify.toml`; subsequent updates merged into `main` deploy automatically.
+
+This workspace is not connected to a Netlify account, so the initial account authorization and production deploy must be completed in Netlify.
+
 ## Team — Innovation Tech
 
 | Member | Assignment role | GitHub |
