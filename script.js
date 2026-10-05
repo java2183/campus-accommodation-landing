@@ -23,6 +23,15 @@ if (menuToggle && navigation) {
       navigation.classList.remove("is-open");
     }
   });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && menuToggle.getAttribute("aria-expanded") === "true") {
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation menu");
+      navigation.classList.remove("is-open");
+      menuToggle.focus();
+    }
+  });
 }
 
 if (enquiryForm && formStatus) {
@@ -36,14 +45,13 @@ if (enquiryForm && formStatus) {
     const formData = new FormData(enquiryForm);
     const name = String(formData.get("name") ?? "").trim();
     const email = String(formData.get("email") ?? "").trim();
-    const room = String(formData.get("room") ?? "").trim();
     const message = String(formData.get("message") ?? "").trim();
-    const subject = encodeURIComponent(`CampusNest enquiry — ${room}`);
+    const subject = encodeURIComponent(`CampusNest enquiry from ${name}`);
     const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nRoom of interest: ${room}\n\n${message || "I'd like to learn more about accommodation."}`,
+      `Name: ${name}\nEmail: ${email}\n\n${message}`,
     );
 
-    formStatus.textContent = "Your email app should open with your enquiry ready to send.";
+    formStatus.textContent = "Your email app should open with your message ready. If it doesn't, email hello@campusnest.edu.";
     window.location.href = `mailto:hello@campusnest.edu?subject=${subject}&body=${body}`;
   });
 }
